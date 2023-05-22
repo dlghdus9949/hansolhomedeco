@@ -1,0 +1,224 @@
+body {min-width: 1000px; font-family: 'NotoSansKR', '맑은 고딕', 'Malgun Gothic', 돋움, Dotum, 'Apple SD Gothic Neo', sans-serif; letter-spacing: -1px; line-height: 1.5;}
+header {text-align: center; height: 81px; position: relative;}
+header h1 {position: absolute; left: 50px; top: 0; padding: 14px 0 0;}
+header h1 a {display: block; width: 110px; height: 48px; color: transparent;
+    background: url(../images/sp_com.png) no-repeat -300px 0;}   /* 사용자가 글씨만 클릭하는 게 아니라 그 근처도 같이 클릭하기 때문에 ! */
+
+
+header .lnb li {display: inline-block;}
+header .lnb li a {display: block; height: 81px; padding: 0 35px; font-size: 17px;
+    color: #333; line-height: 81px;}
+header .lnb li a:hover {color: #2d5b79; font-weight: bold; text-decoration: underline;}
+
+
+header .spot {position: absolute; right: 50px; top: 0;}
+header .spot li {position: relative; float: left;}
+header .spot li:after {content: ""; position: absolute; left: 0; top: 50%; width: 1px; height: 7px;
+    background: #ccc; transform: translate(-50%);}
+header .spot li:first-child:after {display: none;}
+header .spot li a {display: block; height: 81px; padding: 0 10px; line-height: 81px;}
+header .spot li:last-child a {padding-right: 0;}
+
+
+
+
+.visual {position: relative; padding: 0 50px;}
+.visual .prev,
+.visual .next {display: block; position: absolute; top: 50%; width: 25px; height: 47px;
+    transform: translate(-50%); background: url(../images/sp_com.png)no-repeat; color: transparent;}
+.visual .prev {left: 82px; background-position: -128px -60px;}
+.visual .next {right: 82px; background-position: -158px -60px;}
+.visual .con >div {height: 640px;}
+.visual .con .slide {background: url(../images/bg_main09.jpg) no-repeat center; color: #fff; font-size: 32px; line-height: 46px;}
+.visual .con .slide p {font-size: 20px; padding: 19px 0 0 ; line-height: 100%;}
+.visual .con .slide .txt {position: absolute; left: 50%; top: 175px;}
+
+
+/* 64*52 */
+.product a {color: #001829; font-size: 15px;}
+.product a:hover {color: #2d5b79; font-weight: bold;}
+.product a::before {content: ""; display: block; margin: 0 0 26px; width: 64px; height: 52px;
+    background: url(../images/sp_com.png)no-repeat;}
+        /*content는 inline 요소라서 가로세로 값 X */
+.product ul {text-align: center; padding: 46px 0 41px; font-size: 0;}
+        /* 아이콘 추가,삭제할 때 가운데 정렬 하려면 width, float 쓰면 안됨
+        font-size:0은 li사이 inline-block때문에 생기는 공간 없앨 수 있음 */
+.product li {display: inline-block; padding: 0 55px; text-align: center;}
+        /* ㄴ text-align:center, inline-block 사용하기 */
+.product li:nth-child(1) a::before {background-position: -3px -118px;}
+.product li:nth-child(2) a::before {background-position: -75px -118px;}
+.product li:nth-child(3) a::before {background-position: -148px -118px;}
+.product li:nth-child(4) a::before {background-position: -219px -118px;}
+.product li:nth-child(5) a::before {background-position: -292px -118px;}
+.product li:nth-child(6) a::before {background-position: -364px -118px;}
+.product li:nth-child(1) a:hover::before {background-position: -3px -184px;}
+.product li:nth-child(2) a:hover::before {background-position: -75px -184px;}
+.product li:nth-child(3) a:hover::before {background-position: -148px -184px;}
+.product li:nth-child(4) a:hover::before {background-position: -219px -184px;}
+.product li:nth-child(5) a:hover::before {background-position: -292px -184px;}
+.product li:nth-child(6) a:hover::before {background-position: -364px -184px;}
+
+.magazine {background: #dfd9d1; position: relative; height: 600px; padding: 40px 0; width: 100%; overflow: hidden;}
+.magazine h2 {padding: 0 0 16px; font-size: 30px; color: #000; font-weight: 600; text-align: center; line-height: 100%;}
+.magazine p {margin: 3px 0 38px; font-size: 14px; text-align: center; color: #3a3b36; line-height: 100%;}
+.magazine .slide_box >div {width: 1180px; height: 430px; position: absolute; left: 50%; transform: translate(-50%,0);}
+.magazine .slide_box >div:nth-child(1) {margin-left: -1280px;}
+.magazine .slide_box >div:nth-child(3) {margin-left: 1280px;}
+.magazine .slide_box .left {float: left; width: 800px; height: 100%; overflow: hidden; position: relative;}
+.magazine .slide_box .left a {display: inline-block; width: 100%; height: 100%;}
+.magazine .slide_box .left img {width: 100%; display: block;}
+.magazine .slide_box .right {float: right; width: 380px; height: 430px; background: #fff; box-sizing: border-box;}
+.magazine .slide_box .right >div {padding: 8px 20px 0; text-align: left; height: 100%;}
+.magazine .slide_box .right li a {display: block; position: relative; padding-left: 100px; height: 82px; width: 250px; margin-top: 20px;}
+.magazine .slide_box .right li a img {position: absolute; height: 82px; width: 82px; overflow: hidden;  left: 0; top: 0;}
+.magazine .slide_box .right li a .info_pro {padding-top: 16px;}
+.magazine .slide_box .right li a .info_pro strong {display: block; font-size: 14px; font-weight: 500; color: #000;}
+.magazine .slide_box {position: relative; margin: 0 auto; overflow: hidden; height: 430px;}
+.magazine .slide .control {bottom: 30px;}
+.magazine .slide .prev {left: 50%; margin:26px 0 0 -640px; color: #fff;}
+.magazine .slide .next {right: 50%; margin:26px -640px 0 0; color: #fff;}
+
+/*slide*/
+.slide .control {position: absolute; left: 0; bottom: 55px; width: 100%; text-align: center;}
+.slide .control >div {display: inline-block; position: relative; padding: 0 45px 0 0;}
+.slide .control >div >div {position: absolute; right: 0;}
+.slide .control >div >div a {overflow: hidden; display: inline-block; margin: 0 0 0 7px; width: 8px;
+    height: 9px; background: url(../images/sp_com.png) no-repeat; opacity: 0.5;}
+.slide .control >div >div a.on {opacity: 1;}
+.slide .control >div >div a.play {background-position: -108px -72px;}
+.slide .control >div >div a.pause{background-position: -108px -60px;}
+.slide .control ul {font-size: 0; display: inline-block; position: relative; top: -7px;}
+.slide .control li {padding: 0 3px; display: inline-block;}
+.slide .control li .on a {background: #fff;}
+.slide .control li a {display: block; width: 50px; height: 3px; background: rgba(255,255,255,0.5); border: none;}
+.slide .control a {color: transparent;}
+.slide .prev,
+.slide .next {display: block; position: absolute; top: 50%; width: 30px; height: 48px; z-index: 60;
+    transform: translate(-50%); background: url(../images/sp_com.png)no-repeat; color: transparent;}
+.slide .prev {left: 82px; background-position: -128px -60px;}
+.slide .next {right: 82px; background-position: -158px -60px;}
+
+
+.wrap_product {padding: 40px 0; width: 100%;}
+.wrap_product .layout {padding: 0 50px; width: 1180px; margin: 0 auto;}
+.wrap_product .layout h2 {font-size: 30px; font-weight: 600; text-align: center; color: #000;}
+.wrap_product .layout p {text-align: center; margin: 3px 0 38px; font-size: 16px; color: #000;}
+.wrap_product .layout a {display: inline-block; margin-right: 12px; vertical-align: top; width: 280px;}
+.wrap_product .layout a img {margin-bottom: 10px;}
+.wrap_product .layout a h3 {font-size: 18px; color: #000; text-align: center;}
+.wrap_product .layout a p span {font-size: 16px; font-weight: 300; text-align: center; display: inline-block; margin: 0 5px; line-height: 1.5;}
+
+
+.wrap_blog {position: relative; height: 793px; padding: 40px 0; background: #f2f0ed; text-align: center;}
+.wrap_blog .layout {width: 1180px; margin: 0 auto; padding: 0 50px; position: relative;}
+.wrap_blog .layout h2 {font-size: 30px; font-weight: 600; text-align: center; color: #000;}
+.wrap_blog .layout p {text-align: center; margin: 3px 0 38px; font-size: 16px; color: #000;}
+.wrap_blog .layout .bx-wrap {position: relative; padding: 0;}
+.wrap_blog .layout .bx-wrap ul li {margin-right: 15px; height: 553px; background: #fff;}
+.wrap_blog .layout .bx-wrap ul li a {display: inline-block; cursor: pointer; width: 280px; height: 100%;}
+.wrap_blog .layout .bx-wrap ul li a img {height: 280px; width: 280px;}
+.wrap_blog .layout .bx-wrap ul li a .txt {padding: 26px 28px 0 24px; box-sizing: border-box;}
+.wrap_blog .layout .bx-wrap ul li a .txt>p {text-align: left; letter-spacing: -1.5px;}
+.wrap_blog .layout .bx-wrap ul li a .txt .tit {margin-bottom: 10px; font-size: 18px; font-weight: 600; overflow: hidden; text-overflow: ellipsis;
+    display: -webkit-box; height: 3em; line-height: 1.5em;}
+.wrap_blog .layout .bx-wrap ul li a .txt .cont {padding-left: 67px; position: relative; margin-bottom: 5px; box-sizing: border-box; width: 100%;
+    overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 16px;}
+.wrap_blog .layout .bx-wrap ul li a .txt .cont>span {position: absolute; left: 0; top: 0; font-size: 14px; font-weight: 500; font-weight: bold;}
+.wrap_blog .layout .bx-wrap ul li a .txt .cont:last-child {margin-bottom: 0;}
+.wrap_blog .control {bottom: 100px; position: absolute; left: 0; width: 100%;}
+.wrap_blog .control ul {font-size: 0; display: inline-block; position: relative; top: -7px;}
+.wrap_blog .control ul li {margin: 0 3px; vertical-align: middle; display: inline-block;}
+.wrap_blog .control li a {display: block; width: 50px; height: 5px; background: #bbc0bf; border: none;}
+.wrap_blog .control a {color: transparent;}
+.wrap_blog .control ul .on {background-color: #2d5b79;}
+
+
+.youtube {position: relative; height: 400px; padding: 40px 0; text-align: center;}
+.youtube .layout {width: 1180px; margin: 0 auto; padding: 0 50px; position: relative;}
+.youtube .layout h2 {font-size: 30px; font-weight: 600; text-align: center; color: #000;}
+.youtube .layout p {text-align: center; margin: 3px 0 38px; font-size: 16px; color: #000;}
+.youtube .layout .bx-wrap {position: relative; padding: 0;}
+.youtube .layout .bx-wrap ul li {margin-right: 15px;}
+.youtube .layout .bx-wrap ul li a {display: inline; width: 100%; height: 100%;}
+.youtube .layout .bx-wrap ul li a img {width: 280; height: 160px;}
+.youtube .layout .bx-wrap ul li a p {padding: 0 15px; margin-top: 16px; font-size: 18px; text-align: center; font-weight: 400; color: #000; overflow:
+    hidden; text-overflow: ellipsis; display: -webkit-box; height: 3em; line-height: 1.5em; -webkit-line-clamp: 2; -webkit-box-orient: vertical;}
+.youtube .control {bottom: 50px; position: absolute; left: 0; width: 100%;}
+.youtube .control ul {font-size: 0; display: inline-block; position: relative; top: -7px;}
+.youtube .control ul li {margin: 0 3px; vertical-align: middle; display: inline-block;}
+.youtube .control li a {display: block; width: 50px; height: 5px; background: #bbc0bf; border: none;}
+.youtube .control a {color: transparent;}
+.youtube .control >div ul li:first-child{background-color: #2d5b79;}
+
+
+.board {padding: 55px 0; height: 280px; background: url(../images/bg_main_business.jpg)no-repeat 50% top;}
+.board .layout {position: relative; padding: 0 50px; width: 1180px; margin: 0 auto;}
+.board .layout .find {float: left; width: 280px; height: 280px; margin-right: 20px;
+    background: url(../images/bg_key_link03.jpg)no-repeat 0 0; background-size: cover;}
+.board .layout .find .tit {padding-top: 153px; color: #fff; font-size: 18px; font-weight: 500; text-align: center;}
+.board .layout .find:hover .after {display: block; background-color: rgba(45, 91, 121, 0.8);}
+.board .layout .find .after {display: none; color: #fff; margin-top: 12px; text-align: center; font-size: 16px;}    
+
+.board .layout .notice {position: relative; width: 280px; height: 280px; background-color: #f2f0ed; margin-right: 20px; float: left;}
+.board .layout .notice h2 {color: #2d5b79; text-align: center; font-size: 25px; font-weight: 500; height: 65px; line-height: 65px;}
+.board .layout .notice .btn_more {position: absolute; top: 17px; right: 23px; width: 30px; height: 30px; border-radius: 50%;}
+.board .layout .notice .sp_com {display: inline-block; overflow: hidden; background: url(../images/sp_com.png)no-repeat 0 0; line-height: 999px; vertical-align: top;
+     background-color: #fff; background-position: -196px -60px;}
+.board .layout .notice ul {width: 100%;}
+.board .layout .notice ul li {border-top: solid 1px #fff;}
+.board .layout .notice ul li a {padding: 12px 30px; display: block;}
+.board .layout .notice ul li a .txt {overflow: hidden; min-height: 24px; text-overflow: ellipsis; line-height: 1.2em; height: 2.4em; text-align: left; white-space: normal; font-size: 16px;}
+.board .layout .notice ul li a .date {margin-top: 23px; display:inline-block; color: #929292; text-align: left; font-size: 14px;}
+.board .layout .news {position: relative; width: 280px; height: 280px; background-color: #f2f0ed; margin-right: 20px; float: left;}
+.board .layout .news h2 {color: #2d5b79; text-align: center; font-size: 25px; font-weight: 500; height: 65px; line-height: 65px;}
+.board .layout .news .btn_more {position: absolute; top: 17px; right: 23px; width: 30px; height: 30px; border-radius: 50%;}
+.board .layout .news .sp_com {display: inline-block; overflow: hidden; background: url(../images/sp_com.png)no-repeat 0 0; line-height: 999px; vertical-align: top;
+     background-color: #fff; background-position: -196px -60px;}
+.board .layout .news ul {width: 100%;}
+.board .layout .news ul li {border-top: solid 1px #fff;}
+.board .layout .news ul li a {padding: 12px 30px; display: block;}
+.board .layout .news ul li a .txt {overflow: hidden; min-height: 24px; text-overflow: ellipsis; line-height: 1.2em; height: 2.4em; text-align: left; white-space: normal; font-size: 16px;}
+.board .layout .news ul li a .date {margin-top: 23px; display:inline-block; color: #929292; text-align: left; font-size: 14px;}
+.board .layout .search {position: relative; height: 280px; background-color: #fff; float: left; color: #000; padding: 0 20px;}
+.board .layout .search h2 {color: #2d5b79; text-align: center; font-size: 25px; font-weight: 500; height: 65px; line-height: 65px;}
+.board .layout .search form {display: block;}
+.board .layout .search form .selectbox {margin-top: 10px; border: 0 none; height: 45px; background-color: #f2f0ed; display: block;}
+
+
+.board .layout .search form .selectbox::before {content: ""; position: absolute; top: 35%; right: 35px; width: 0; height: 0; margin-top: -2px;
+    border-left: 3px solid transparent; border-right: 3px solid transparent; border-top: 5px solid #000;}
+
+
+.board .layout .search form .selectbox label {position: absolute; padding: 0 35px 0 15px; z-index: 60; font-size: 16px; height: 44px; line-height: 44px;}
+.board .layout .search form .selectbox select {width: 100%; padding: 0 35px 0 15px; height: 100%; font-family: inherit; border: 0; opacity: 0; }
+.board .layout .search form .selectbox option {display: block; font-weight: normal; min-height: 1.2em; padding: 0 2px 1px;}
+.board .layout .search form .inp_txt {margin-top: 10px; font-size: 16px; display: block; padding: 0 20px; width: 200px; height: 45px; line-height: 45px; border: 0 none; background-color: #f2f0ed;}
+.board .layout .search form .inp_txt::placeholder {font-size: 16px; text-align: left;}
+.board .layout .search .btn_search {display: block; margin-top: 30px; background-color: #2d5b79; color: #fff; height: 45px; line-height: 45px; text-align: center; width: 100%; font-size: 16px;}
+
+
+footer .top {background: #383f43; }
+footer .top >div {width: 1180px; margin: 0 auto; padding: 13px 0;}
+footer .top >div ul {float: left;}
+footer .top >div ul li {position: relative; float: left; padding: 0 19px 0 0;} /* 텍스트만 클릭 되도록*/
+footer .top >div ul li::after {position: absolute; right: 9px; top: 50%; content: ""; width: 1px; height: 8px; background: #70767a;}
+footer .top >div ul li:last-child::after {display: none;}
+footer .top >div ul li a {font-size: 14px; color: #fff; line-height: 45px;}
+footer .top >div >div {float: right;}
+
+footer .top .consulation {position: relative;}
+footer .top >div >div >div {display: inline-block; padding: 0 80px; background: #2a3033; color: #fff; height: 45px; text-align: center; line-height: 45px; font-size: 14px;}
+footer .top >div >div >div span {font-weight: 500; font-size: 18px;}
+footer .top >div >div >div .num {padding: 0 0 0 15px;}
+footer .top .clear >div .consulation::after {content: "※제품구매 문의는 대리점 찾기에서 가까운 매장을 검색 해 주세요"; color: #fff; display: inline-block; position: absolute; bottom: 4px; width: 100%;
+    text-align: center; left: 0; font-size: 12px; padding: 0 5px; box-sizing: border-box;}
+footer .top >div >div select {margin-left: 7px; padding: 0 0 0 21px; color: #191919; font-size: 12px; width: 200px; height: 45px; box-sizing: border-box; border: none; vertical-align: 1px;}
+
+footer .btm {padding: 40px 0 44px 130px; background: #4c5459; text-align: left; margin: 0 auto;}
+footer .btm p {display: inline-block; width: 131px; height: 51px; background: url(../images/sp_com.png)no-repeat -150px 0; color: transparent;}
+footer .btm ul {padding: 32px 0 0 0;}
+footer .btm li {position: relative; display: inline-block; padding: 0 10px; color: #fff; font-size: 14px;}
+footer .btm li::after {position: absolute; right: 0px; margin-top: -4px; top: 50%; content: ""; width: 1px; height: 8px; background: #70767a;}
+footer .btm li:last-child::after {display: none;}
+footer .btm li:nth-child(2) {font-size: 18px; font-weight: 500;}
+footer .btm .copy {padding: 0 10px; color: #fff; font-size: 14px;}
